@@ -1,0 +1,40 @@
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px 40px 0 40px;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+h5 {
+  margin: 0 0 25px 0;
+}
+
+#card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 65%;
+}
+
+#card-list .card {
+  height: 100px;
+  width: 150px;
+  box-shadow: 3px 1px 6px 1px #888888;
+  margin-bottom: 20px;
+  margin: 7px 8px 0px 8px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+#card:hover {
+  box-shadow: 5px 5px 20px 0px #888888;
+}
+
+#answer-field {
+  height: 75px;
+  padding-top: 35px;
+}
