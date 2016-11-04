@@ -7,3 +7,9 @@ The goal of the app is to allow users to view and create decks of flashcards to 
 ----------
 Setup
 -------------
+
+1. Create your sqlite database file called `database.sqlite` in the root of the `database` directory
+2. Run the table migrations and seed your database
+
+    php artisan migrate
+    php artisan db:seed
