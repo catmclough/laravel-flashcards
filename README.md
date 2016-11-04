@@ -20,7 +20,7 @@ Then install your packages, run the table migrations, and seed your database
 
 > **Note:**
 
-> - Running the migrate command may return the following prompt:
+> - Running the migrate and seed commands may return the following prompt:
 
   	**************************************
   	*     Application In Production!     *
@@ -28,3 +28,22 @@ Then install your packages, run the table migrations, and seed your database
   	 Do you really wish to run this command? (yes/no) [no]:
 
 > - Just type 'yes' and hit Enter
+
+You'll need to set an application key in a .env file. First, copy the example .env with this command:
+
+    cp .env.example .env
+
+Then set the application key
+
+    php artisan key:generate
+
+----------
+Testing
+-------------
+
+- Dependencies
+  - PHPUnit
+
+Run all unit and feature tests
+
+    phpunit
