@@ -8,8 +8,23 @@ The goal of the app is to allow users to view and create decks of flashcards to 
 Setup
 -------------
 
-1. Create your sqlite database file called `database.sqlite` in the root of the `database` directory
-2. Run the table migrations and seed your database
+Create your sqlite database file called `database.sqlite` in the root of the `database` directory
 
+    touch database/database.sqlite
+
+Then install your packages, run the table migrations, and seed your database
+
+    composer install
     php artisan migrate
     php artisan db:seed
+
+> **Note:**
+
+> - Running the migrate command may return the following prompt:
+
+  	**************************************
+  	*     Application In Production!     *
+  	**************************************
+  	 Do you really wish to run this command? (yes/no) [no]:
+
+> - Just type 'yes' and hit Enter
