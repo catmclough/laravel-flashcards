@@ -5,7 +5,7 @@ This is a simple, incomplete web app written in Laravel as a practice project fo
 The goal of the app is to allow users to view and create decks of flashcards to be studied in random order. Many important features are not yet implemented. Follow the instructions below to start improving upon this foundation!
 
 ----------
-  - [PHP 5.6](https://php-osx.liip.ch/)
+  - PHP 5.6 (Install via [Homebrew](https://ryanwinchester.ca/posts/install-php-5-6-in-osx-10-with-homebrew) or [Binary Package](https://jason.pureconcepts.net/2016/09/upgrade-php-mac-os-x/))
   - [Composer](https://getcomposer.org/download)
     - [Laravel](https://laravel.com/docs/5.3#installation)
     - Install with Composer:
