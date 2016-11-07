@@ -7,9 +7,8 @@ The goal of the app is to allow users to view and create decks of flashcards to 
 ----------
   - [Composer](https://getcomposer.org/download)
   - [Laravel](https://laravel.com/docs/5.3#installation)
-    - With Composer:
+    - Install with Composer:
       - `composer global require "laravel/installer"`
-----------
 
 Setup
 -------------
