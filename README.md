@@ -78,3 +78,11 @@ Serve website locally
 
     php artisan serve
 
+
+-------
+Challenge Order
+-------
+  1. Decks Index Page ('/decks')
+    - `phpunit tests/features/ViewDecksIndexTest.php`
+  2. Root Page
+    - `phpunit tests/features/RootPageTest.php`
