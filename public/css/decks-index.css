@@ -1,0 +1,22 @@
+#deck-list {
+  width: 50%;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#deck-list a {
+  margin-bottom: 15px;
+}
+
+#deck-list li {
+  padding: 1.5em;
+  list-style: none;
+  border: 1px solid black;
+}
+
+#deck-list li:hover {
+  background-color: #ecf0f1;
+}

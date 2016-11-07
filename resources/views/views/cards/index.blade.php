@@ -2,7 +2,7 @@
 
 @section('head')
     <link rel="stylesheet" href="/css/deck-show.css">
-@endsection
+@stop
 
 @section('nav')
     <a href="/decks">
@@ -10,12 +10,13 @@
             &#x21d0;
         </div>
     </a>
-@endsection
+@stop
 
 @section('content')
     <h1>{{ $deck->title }}</h1>
+    <h5>by {{ $deck->user->username }}</h5>
 
-    @if($deck->cards()->count() > 0)
+    @if($cards->count() > 0)
         <div class="nav-button">
             <a href="/cards/{{ $deck->cards()->first()->id }}" alt="study deck">Study This Deck</a>
         </div>
@@ -34,14 +35,23 @@
     </form>
 
     <div id=card-list>
-        @foreach ($deck->cards as $card)
+        @foreach ($cards as $card)
             <a href="/cards/{{ $card->id }}/edit">
                 <div class="card">{{ $card->prompt }} - {{ $card->answer }}</div>
             </a>
         @endforeach
     </div>
-@endsection
+@stop
 
 @section('footer')
     <script type="text/javascript" src="/js/toggle.js"></script>
-@endsection
+    <script type="text/javascript">
+        var originalText = "";
+        $(".card").mouseover(function() {
+            originalText = $(this).text();
+            $(this).html("Edit");
+        }).mouseout(function() {
+            $(this).html(originalText);
+        });
+    </script>
+@stop
