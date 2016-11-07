@@ -20,9 +20,17 @@ class DecksTableSeeder extends Seeder
                     'World Leaders',
         ];
 
+
+
         foreach($titles as $title) {
             $deck = new App\Deck(['title' => $title]);
             $deck->save();
+            $deck->cards()->save(factory(App\Card::class)->make());
+            $deck->cards()->save(factory(App\Card::class)->make());
+            $deck->cards()->save(factory(App\Card::class)->make());
+            $deck->cards()->save(factory(App\Card::class)->make());
+            $deck->cards()->save(factory(App\Card::class)->make());
+            $deck->cards()->save(factory(App\Card::class)->make());
         }
     }
 }
