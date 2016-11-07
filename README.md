@@ -6,7 +6,6 @@ The goal of the app is to allow users to view and create decks of flashcards to 
 
 ----------
   - [PHP 5.6](https://php-osx.liip.ch/)
-  - [PHPUnit 5.6](https://phpunit.de/getting-started.html)
   - [Composer](https://getcomposer.org/download)
     - [Laravel](https://laravel.com/docs/5.3#installation)
     - Install with Composer:
@@ -67,8 +66,15 @@ Testing
 -------------
 
 - Dependencies
-  - PHPUnit
+  - [PHPUnit 5.6](https://phpunit.de/getting-started.html)
 
 Run all unit and feature tests
 
     phpunit
+
+-----------
+Serve website locally
+-----------
+
+    php artisan serve
+
