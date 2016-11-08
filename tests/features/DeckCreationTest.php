@@ -11,6 +11,7 @@ class ViewDecksFlashcardsTest extends TestCase
     public function test_can_view_deck_when_deck_has_no_flashcards()
     {
         $this->post('/decks', ['title' => 'New Deck'])
-             ->assertResponseOk();
+             ->seePageIs('/decks')
+             ->see('New Deck');
     }
 }
