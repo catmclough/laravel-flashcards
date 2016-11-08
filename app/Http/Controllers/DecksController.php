@@ -20,6 +20,6 @@ class DecksController extends Controller
         $deck = new Deck();
         $deck->title = $request->title;
         $deck->save();
-        return back();
+        return redirect('/decks');
     }
 }
