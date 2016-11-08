@@ -9,11 +9,11 @@ class DeckCreationTest extends TestCase
 {
     use DatabaseMigrations;
 
-    public function test_can_view_deck_when_deck_has_no_flashcards()
+    public function test_can_create_deck()
     {
-        $this->post('/decks', ['title' => 'New Test Deck'])
-             ->seePageIs('/decks');
-
-        assert(Deck::all()->contains('New Test Deck'));
+        $this->call('POST', '/decks', ['title' => 'New Test Deck']);
+        $this->assertRedirectedTo('/decks');
+        $deckTitles = Deck::all()->pluck('title');
+        assert($deckTitles->contains('New Test Deck'));
     }
 }
