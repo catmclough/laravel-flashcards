@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <h1>Dumb Flashcards</h1>
+    <h1>Simple Flashcards</h1>
     <ul id=deck-list>
         @foreach ($decks as $deck)
             <a href="/decks/{{ $deck->id }}" alt="{{ $deck->title }}">

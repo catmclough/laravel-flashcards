@@ -9,7 +9,7 @@ $factory->define(App\Deck::class, function (Faker\Generator $faker) {
 
 $factory->define(App\Card::class, function (Faker\Generator $faker) {
     return [
-        'prompt' => $faker->word,
-        'answer' => $faker->word
+        'prompt' => $faker->sentence(2),
+        'answer' => $faker->sentence(3)
     ];
 });

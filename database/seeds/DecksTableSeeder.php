@@ -15,14 +15,20 @@ class DecksTableSeeder extends Seeder
                     'U.S. State Capitals',
                     'German Nouns',
                     'The Periodic Table',
-                    '18th Century Composers',
-                    'Birds of Canada',
-                    'World Leaders',
+                    'Birds of Canada'
         ];
+
+
 
         foreach($titles as $title) {
             $deck = new App\Deck(['title' => $title]);
             $deck->save();
+            $deck->cards()->save(factory(App\Card::class)->make());
+            $deck->cards()->save(factory(App\Card::class)->make());
+            $deck->cards()->save(factory(App\Card::class)->make());
+            $deck->cards()->save(factory(App\Card::class)->make());
+            $deck->cards()->save(factory(App\Card::class)->make());
+            $deck->cards()->save(factory(App\Card::class)->make());
         }
     }
 }
