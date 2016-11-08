@@ -80,11 +80,21 @@ Serve website locally
 
 
 -------
-Challenge Order
+Challenges
 -------
+###Make the following tests pass:
   1. See All Decks ('/decks')
     - `phpunit tests/features/ViewDecksIndexTest.php`
   2. Root Page Redirects to Decks Index
     - `phpunit tests/features/RootPageTest.php`
   3. Create New Deck
     - `phpunit tests/features/DeckCreationTest.php`
+
+###Use TDD to implement some new features! Here are some ideas:
+  1. Implement 'Study This Deck' button (redirects to Card show page)
+  2. Create new card from Deck show page
+  3. Validate that new Cards and Decks meet certain criteria
+  4. Edit a card by clicking on one from the Deck index page
+  5. Refactor!
+    - Setup controllers so that no 'if' statements are used in the views
+    - Move database interactions from Controllers to Models
