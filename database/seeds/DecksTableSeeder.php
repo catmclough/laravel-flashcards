@@ -15,9 +15,7 @@ class DecksTableSeeder extends Seeder
                     'U.S. State Capitals',
                     'German Nouns',
                     'The Periodic Table',
-                    '18th Century Composers',
-                    'Birds of Canada',
-                    'World Leaders',
+                    'Birds of Canada'
         ];
 
 
