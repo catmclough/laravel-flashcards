@@ -5,5 +5,5 @@ Route::get('/', function() {
 });
 
 Route::get('/decks', 'DecksController@index');
-
+Route::post('/decks', function(){});
 Route::get('/decks/{deck}', 'DecksController@show');
