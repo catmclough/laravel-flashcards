@@ -16,8 +16,10 @@ class DecksController extends Controller
         return view('decks.show', ['deck' => $deck ]);
     }
 
-    public function store(Deck $deck) {
-        $decks = Deck::all();
-        return view('decks.index', ['decks' => $decks]);
+    public function store(Request $request) {
+        $deck = new Deck();
+        $deck->title = $request->title;
+        $deck->save();
+        return back();
     }
 }
